@@ -21,9 +21,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from bs4 import BeautifulSoup
 
 bot = Client("bot",
-             bot_token= "8160218853:AAG3RAkZMR3asoAzSUx5b2m290-eTjwoXRo", 
-             api_id= 27679306,
-             api_hash= "d0f390f798eec4ddb9246a00a44b7a3f")
+             bot_token= "7595438234:AAGpG6ErWQAnMvifrn7T2N4toTMA3JOkr2k", 
+             api_id= 21567814,
+             api_hash= "cd7dc5431d449fd795683c550d7bfb7e")
 
 
 #----------CONVERTOR-------------
@@ -58,7 +58,7 @@ async def run_bot(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello, **ROWDY**! 🌟\n\n I am your friendly bot 🤖, here to help you download links from your **.txt** file and upload them to Telegram. To get started, simply send me the /ROWDY command and follow a few easy steps.")
+    editable = await m.reply_text("Hello, **TEST**! 🌟\n\n I am your friendly bot 🤖, here to help you download links from your **.txt** file and upload them to Telegram. To get started, simply send me the /ROWDY command and follow a few easy steps.")
 
 
 @bot.on_message(filters.command("stop"))
@@ -69,7 +69,7 @@ async def restart_handler(_, m):
 
 #-------------TXT Uploader Commands ---------------
 
-@bot.on_message(filters.command(["ROWDY"]))
+@bot.on_message(filters.command(["TEST"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Hey Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -162,7 +162,7 @@ async def account_login(bot: Client, m: Message):
         count = int(raw_text)
 
     try:
-        await bot.send_message(-1002276233363, f"**•File name** - `{file_name}`({raw_text0})\n**•Total Links Found In TXT** - `{len(links)}`\n**•Starts from** - `{raw_text}`\n**•Resolution** - `{res}`({raw_text2})\n**•Caption** - `{raw_text3}`\n**•Thumbnail** - `{thumb}`")
+        await bot.send_message(-1002288634593, f"**•File name** - `{file_name}`({raw_text0})\n**•Total Links Found In TXT** - `{len(links)}`\n**•Starts from** - `{raw_text}`\n**•Resolution** - `{res}`({raw_text2})\n**•Caption** - `{raw_text3}`\n**•Thumbnail** - `{thumb}`")
         for i in range(count - 1, len(links)):
             if len(links[i]) != 2 or not links[i][1]:
                 # If the link is empty or not properly formatted, continue to the next iteration
