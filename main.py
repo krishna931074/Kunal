@@ -18,15 +18,6 @@ from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import StickerEmojiInvalid
 from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from bs4 import BeautifulSoup
-
-bot = Client("bot",
-             bot_token= "7595438234:AAGpG6ErWQAnMvifrn7T2N4toTMA3JOkr2k", 
-             api_id= 21567814,
-             api_hash= "cd7dc5431d449fd795683c550d7bfb7e")
-
-
-#----------CONVERTOR-------------
 
 @bot.on_message(filters.command('h2t'))
 async def run_bot(bot: Client, m: Message):
