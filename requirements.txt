@@ -28,6 +28,7 @@ Jinja2==3.0.3
 werkzeug==2.0.2
 itsdangerous==2.0.1
 beautifulsoup4
+bs4
 ffmpeg
 youtube-dl
 m3u8-download
