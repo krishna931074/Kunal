@@ -9,7 +9,7 @@ import subprocess
 import logging
 from utils import progress_bar
 import core as helper
-from config import BOT_TOKEN, API_ID, API_HASH, MONGO_URI, BOT_NAME
+from vars import BOT_TOKEN, API_ID, API_HASH
 import aiohttp
 from aiohttp import ClientSession
 from pyromod import listen
@@ -40,14 +40,14 @@ bot = Client("bot",
 # Get the MongoDB collection for this bot
 collection = get_collection(BOT_NAME, MONGO_URI)
 # Constants
-OWNER_IDS = [6126688051]  # Replace with the actual owner user IDs
+OWNER_IDS = [6428531614]  # Replace with the actual owner user IDs
 
 cookies_file_path = "modules/cookies.txt"
 # Global variables
-log_channel_id = -1002288634593
+log_channel_id = -1002499165487
 authorized_users = []
 ALLOWED_CHANNEL_IDS = []
-my_name = "𝐊𝐔𝐍𝐀𝐋❤️"
+my_name = "MAYA❤️"
 overlay = None 
 accept_logs = 0
 bot_running = False
